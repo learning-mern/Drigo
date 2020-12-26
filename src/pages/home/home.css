@@ -1,0 +1,62 @@
+.background {
+    background: url("../../images/bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    margin: 0;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.welcome {
+    padding-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+.login {
+    margin: auto auto 20px auto;
+    width: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.login:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.signup {
+    margin: auto auto 20px auto;
+    width: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.signup:hover {
+    color: #000;
+    background-color: #fff;
+}
