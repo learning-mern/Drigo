@@ -5,9 +5,10 @@ import {
     Switch
 } from 'react-router-dom';
 import Landing from './pages/landing/landing';
-import Home from './pages/home/home';
 import BookAJourneyLogin from './pages/Passenger/login/login'
 import BookAJourneySignup from './pages/Passenger/signup/signup'
+import IamADrigoLogin from './pages/Driver/login/login'
+import IamADrigoSignup from './pages/Driver/signup/signup'
 
 
 class App extends Component {
@@ -20,13 +21,6 @@ class App extends Component {
                     exact
                     path = "/"
                     render = { props => <Landing {...props}/>}/>
-                </Switch>
-
-                <Switch>
-                    <Route
-                    exact
-                    path = "/home"
-                    render = { props => <Home {...props}/>}/>
                 </Switch>
 
                 <Switch>
@@ -47,14 +41,14 @@ class App extends Component {
                     <Route
                     exact
                     path = "/i-am-a-drigo/login"
-                    render = { props => <Home {...props}/>}/>
+                    render = { props => <IamADrigoLogin {...props}/>}/>
                 </Switch>
 
                 <Switch>
                     <Route
                     exact
                     path = "/i-am-a-drigo/signup"
-                    render = { props => <Home {...props}/>}/>
+                    render = { props => <IamADrigoSignup {...props}/>}/>
                 </Switch>
 
             </Router>
