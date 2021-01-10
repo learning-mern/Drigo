@@ -34,6 +34,7 @@ Form{
 
 .loginForm input[type="email"],
 .loginForm input[type="name"],
+.loginForm input[type="vehicleNum"],
 .loginForm input[type="password"] {
     font-family: 'Playfair Display', serif;
     height: 30px;
