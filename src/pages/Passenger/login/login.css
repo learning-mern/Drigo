@@ -1,0 +1,104 @@
+.background {
+    background: url("../../../images/bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    margin: 0;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.loginDiv{
+    margin: 100px auto auto auto;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-radius: 20px;
+}
+
+Form{
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    text-align: center;
+}
+
+.hey-buddy{
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.loginForm input[type="email"],
+.loginForm input[type="password"] {
+    height: 30px;
+    width: 230px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.loginForm input::placeholder{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.login-button{
+    margin: 30px auto 20px auto;
+    width: 230px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: 3px solid #fff;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color .5s;
+}
+
+.signup-btn{
+    text-decoration: none;
+    margin: 30px auto 20px auto;
+    padding: 5px 67px 5px 67px;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    border: 3px solid #fff;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color .5s;
+}
+
+.login-button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.signup-btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.dont-have-acc{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
