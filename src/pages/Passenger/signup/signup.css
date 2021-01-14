@@ -43,6 +43,8 @@ Form{
     border: none;
     border-bottom: 3px solid #fff;
     color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
     font-weight: 500;
     border-radius: 0;
     background-color: transparent;
