@@ -16,7 +16,7 @@ export default class BookAJourneyLogin extends React.Component {
     }
 
     componentDidMount(){
-        if(localStorage.getItem('email') && localStorage.getItem('password')){
+        if(localStorage.getItem('email') && localStorage.getItem('password') && localStorage.getItem('name')){
             firebase.auth().signInWithEmailAndPassword(localStorage.getItem('email'), localStorage.getItem('password'))
             .then(
                 this.setState(()=> {
@@ -40,13 +40,21 @@ export default class BookAJourneyLogin extends React.Component {
         event.preventDefault();
         try{
             firebase.auth().signInWithEmailAndPassword(email, password)
-            .then(async result => {
-                    localStorage.setItem('email', email);
-                    localStorage.setItem('password', password);
-
-                    console.log(localStorage.getItem('email'));
-
-                    this.props.history.push("./");
+            .then(async res => {
+                const result = await firebase.firestore().collection('passengers').doc('users').collection('users').get();
+                if(result.docs.length > 0){
+                    result.docs.forEach((item, index) => {
+                        firebase.firestore().collection('passengers').doc('users').collection('users').doc(item.id).get()
+                        .then((doc) => {
+                            if(email === doc.data().email){
+                                localStorage.setItem('name', doc.data().name);
+                            }
+                        })
+                    })
+                }
+                localStorage.setItem('email', email);
+                localStorage.setItem('password', password);
+                this.props.history.push("./");
             })
         } catch(error){
             console.error("Error is: ", error);
@@ -76,7 +84,6 @@ export default class BookAJourneyLogin extends React.Component {
                             name="password"
                             class="form-control"
                             placeholder="PASSWORD"
-                            value = ""
                             value = {this.state.password}
                             onChange = {this.handleChange}
                             required />
