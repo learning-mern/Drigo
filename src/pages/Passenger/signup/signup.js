@@ -28,17 +28,25 @@ export default class BookAJourneySignup extends React.Component {
         try{
             firebase.auth().createUserWithEmailAndPassword(email, password)
             .then(async result => {
-                    localStorage.setItem('name', name);
-                    localStorage.setItem('email', email);
-                    localStorage.setItem('password', password);
+                firebase.firestore().collection('passengers').doc('users').collection('users')
+                .add({
+                    name,
+                    email
+                }).then(async result => {
+                        localStorage.setItem('name', name);
+                        localStorage.setItem('email', email);
+                        localStorage.setItem('password', password);
 
-                    console.log(localStorage.getItem('name'));
-                    console.log(localStorage.getItem('email'));
+                        console.log(localStorage.getItem('name'));
+                        console.log(localStorage.getItem('email'));
 
-                    this.props.history.push("./");
+                        this.props.history.push("./");
+                }).catch((error) => {
+                    console.error("Error adding document: ", error);
+                })
             })
         } catch(error){
-            console.error("Error is: ", error);
+            console.error("Error in adding user: ", error);
         }
     }
 
