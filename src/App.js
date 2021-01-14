@@ -7,6 +7,7 @@ import {
 import Landing from './pages/landing/landing';
 import BookAJourneyLogin from './pages/Passenger/login/login'
 import BookAJourneySignup from './pages/Passenger/signup/signup'
+import BookAJourneyHome from './pages/Passenger/home/home'
 import IamADrigoLogin from './pages/Driver/login/login'
 import IamADrigoSignup from './pages/Driver/signup/signup'
 
@@ -35,6 +36,13 @@ class App extends Component {
                     exact
                     path = "/book-a-journey/signup"
                     render = { props => <BookAJourneySignup {...props}/>}/>
+                </Switch>
+
+                <Switch>
+                    <Route
+                    exact
+                    path = "/book-a-journey"
+                    render = { props => <BookAJourneyHome {...props}/>}/>
                 </Switch>
 
                 <Switch>

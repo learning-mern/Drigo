@@ -30,11 +30,12 @@ export default class BookAJourneySignup extends React.Component {
             .then(async result => {
                     localStorage.setItem('name', name);
                     localStorage.setItem('email', email);
+                    localStorage.setItem('password', password);
 
                     console.log(localStorage.getItem('name'));
                     console.log(localStorage.getItem('email'));
 
-                    this.props.history.push("./login");
+                    this.props.history.push("./");
             })
         } catch(error){
             console.error("Error is: ", error);
