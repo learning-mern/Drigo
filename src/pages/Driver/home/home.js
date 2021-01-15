@@ -8,6 +8,7 @@ export default class IamADrigoHome extends React.Component {
     componentDidMount(){
         if(localStorage.getItem('email') && localStorage.getItem('password')){
             console.log(localStorage.getItem('name'));
+            console.log(localStorage.getItem('vehicleNum'));
         } else {
             this.setState(()=> {
                 this.props.history.push('/login')
