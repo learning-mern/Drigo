@@ -1,6 +1,7 @@
 import React from 'react'
 import "./home.css";
 import firebase from "../../../services/firebase";
+import Navbar from "../../../components/navbar/navbar"
 
 
 export default class BookAJourneyHome extends React.Component {
@@ -24,8 +25,8 @@ export default class BookAJourneyHome extends React.Component {
     render(){
         return(
             <div style = {{width: "100vw", height: "100vh"}} className = "background">
-                <p className = "logo"> Drigo </p>
-                <a className="signup-btn" onClick = {this.logOut}>Log Out</a>
+                <Navbar />
+                <a className="signout-btn" onClick = {this.logOut}>Log Out</a>
                 <p style = {{color: "white"}}>{localStorage.getItem('name')}</p>
             </div>
         )
