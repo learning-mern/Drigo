@@ -1,0 +1,48 @@
+.navbar{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo1{
+    background: url("../../images/logo.png") center no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.fa-user,
+.fa-home,
+.fa-search,
+.fa-power-off{
+    font-size: 40px;
+    color: #fff;
+    margin: 30px auto 5px 32px;
+    cursor: pointer;
+}
+
+.user,
+.home,
+.search,
+.logOut{
+    color: #839b97;
+    font-size: 11px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    /* text-transform: uppercase; */
+    transition: opacity 0.5s;
+}
+
+.fa-user{
+    margin-top: 100px;
+}
+
+.fa-home{
+    margin-left: 27px;
+}
+
+.fa-search,
+.fa-power-off{
+    margin-left: 30px;
+}

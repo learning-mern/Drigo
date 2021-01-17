@@ -1,7 +1,6 @@
-.background1 {
+.background {
     background: url("../../../images/bg.jpg") center no-repeat;
     background-size: cover;
-    display: flex;
 }
 
 .logo {
@@ -13,10 +12,8 @@
     letter-spacing: 1px;
 }
 
-.signout-btn{
+.signup-btn{
     text-decoration: none;
-    width: 90px;
-    height: 30px;
     margin: 30px auto 20px auto;
     padding: 5px 67px 5px 67px;
     font-family: 'Playfair Display', serif;
@@ -31,7 +28,7 @@
 }
 
 
-.signout-btn:hover {
+.signup-btn:hover {
     color: #000;
     background-color: #fff;
 }

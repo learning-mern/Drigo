@@ -10,7 +10,7 @@ import BookAJourneySignup from './pages/Passenger/signup/signup'
 import BookAJourneyHome from './pages/Passenger/home/home'
 import IamADrigoLogin from './pages/Driver/login/login'
 import IamADrigoSignup from './pages/Driver/signup/signup'
-
+import IamADrigoHome from './pages/Driver/home/home'
 
 class App extends Component {
     render() {
@@ -57,6 +57,13 @@ class App extends Component {
                     exact
                     path = "/i-am-a-drigo/signup"
                     render = { props => <IamADrigoSignup {...props}/>}/>
+                </Switch>
+
+                <Switch>
+                    <Route
+                    exact
+                    path = "/i-am-a-drigo"
+                    render = { props => <IamADrigoHome {...props}/>}/>
                 </Switch>
 
             </Router>
