@@ -1,0 +1,32 @@
+.searchBar{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+input[type="search"]{
+    font-family: 'Playfair Display', serif;
+    height: 30px;
+    width: 40vw;
+    /* padding: 20px; */
+    /* margin-bottom: 0px; */
+    text-align: center;
+    border: none;
+    /* border-bottom: 2px solid #fff; */
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
