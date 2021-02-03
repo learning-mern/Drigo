@@ -2,6 +2,7 @@ import React from 'react'
 import "./home.css";
 import Navbar from "../../../components/navbar/navbar"
 import firebase from "../../../services/firebase";
+import SearchBar from "../../../components/searchBar/searchBar"
 
 
 export default class BookAJourneyHome extends React.Component {
@@ -27,7 +28,7 @@ export default class BookAJourneyHome extends React.Component {
             <div style = {{width: "100vw", height: "100vh"}} className = "background1">
                 <Navbar
                 logOut = {this.logOut}/>
-                <p style = {{color: "white"}}>{localStorage.getItem('name')}</p>
+                <SearchBar />
             </div>
         )
     }
