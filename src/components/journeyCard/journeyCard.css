@@ -1,0 +1,59 @@
+.journeyCard{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.sourceLoc{
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin: 25px auto 5px auto;
+    text-align: center;
+}
+
+.toAndFrom{
+    color: #fff;
+    font-size: 30px;
+    /* padding: 0; */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.destination{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 5px auto 25px auto;
+    text-align: center;
+}
+
+.bookNow{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 5px 30px 5px 30px;
+    margin-left: 43px;
+    margin-top: 20px;
+    background-color: transparent;
+    transition: background-color .5s;
+}
+
+.bookNow:hover{
+    background-color: #fff;
+    color: #000;
+}

@@ -3,6 +3,7 @@ import "./home.css";
 import Navbar from "../../../components/navbar/navbar"
 import firebase from "../../../services/firebase";
 import SearchBar from "../../../components/searchBar/searchBar"
+import JourneyCard from "../../../components/journeyCard/journeyCard"
 
 
 export default class BookAJourneyHome extends React.Component {
@@ -28,7 +29,10 @@ export default class BookAJourneyHome extends React.Component {
             <div style = {{width: "100vw", height: "100vh"}} className = "background1">
                 <Navbar
                 logOut = {this.logOut}/>
-                <SearchBar />
+                <div style = {{marginLeft: "auto", marginRight: "auto"}}>
+                    <SearchBar />
+                    <JourneyCard />
+                </div>
             </div>
         )
     }
